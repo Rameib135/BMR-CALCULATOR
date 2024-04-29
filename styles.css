@@ -77,3 +77,31 @@ button:hover {
     height: auto;
 }
 
+/* Responsive CSS for iPhone screens */
+@media screen and (max-width: 480px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .calculator {
+        width: 85%;
+        margin: 0;
+    }
+
+    .image-container {
+        width: 50%;
+        padding-top: 40px;
+        padding-left: 40px;
+    }
+
+    input, select {
+        width: 80%;
+    }
+
+    button {
+        width: 40%;
+    }
+}
+
