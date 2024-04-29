@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מחשבון BMR</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <h1>BMR Calculator</h1>
+    </header>
+
+    <div class="content">
+        <div class="calculator">
+            <h2>Calculate Your Basal Metabolic Rate (BMR)</h2>
+            <form id="bmr-form">
+                <div class="form-group">
+                    <label for="age">Age (years):</label>
+                    <input type="number" id="age" name="age" required min="0">
+                </div>
+
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="weight">Weight (kg):</label>
+                    <input type="number" id="weight" name="weight" required min="0">
+                </div>
+
+                <div class="form-group">
+                    <label for="height">Height (cm):</label>
+                    <input type="number" id="height" name="height" required min="0">
+                </div>
+
+                <button type="submit">Calculate BMR</button>
+            </form>
+
+            <div id="result"></div>
+        </div>
+
+        <div class="image-container">
+            <img src="images/bmr.jpg" alt="Your Image">
+        </div>
+    </div>
+
+    <footer>
+        <p>All rights reserved &copy; 2024 BMR Calculator</p>
+        <p>RAME IBRAHEM</p>
+    </footer>
+
+    <script src="bmr.js"></script>
+</body>
+</html>
