@@ -1,119 +1,108 @@
+/* הגדרות בסיסיות */
 body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
     margin: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
+    padding: 0;
+    overflow-x: hidden;
 }
 
-header, footer {
-    background-color: #3f99ca;
-    color: #fff;
-    padding: 20px;
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
     text-align: center;
-    width: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
 }
 
 .content {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    flex-grow: 1;
-    margin-top: 50px;
-    margin-bottom: 100px;
-}
-
-.calculator {
-    width: 50%;
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
     padding: 20px;
-    border: 2px solid #21a5c6;
-    border-radius: 5px;
-    text-align: center;
-   margin-left: 150px;
-   margin-right: 150px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 label {
-    display:inline-block;
-    width: 120px;
+    display: block;
     margin-bottom: 5px;
-    text-align: right; /* Align label text to the right */
-    font-weight: bold; /* Add this line to make the label text bold */
+    color: #333;
+    font-size: 1.1em;
 }
 
-input, select {
-    width: calc(40% - 8px); /* Adjusting for padding and borders */
-    padding: 8px;
-    border-radius: 3px;
-    border: 2px solid #ccc;
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     box-sizing: border-box;
 }
 
 button {
-    background-color:  #3f99ca;
+    background-color: #28a745;
     color: white;
-    padding: 10px 20px;
     border: none;
-    border-radius: 3px;
+    padding: 12px 20px;
+    margin-top: 20px;
     cursor: pointer;
-    width: 18%; 
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #64abdb;
+    background-color: #218838;
 }
 
-.image-container {
-    width: 30%;
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #007bff;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
 }
 
-.image-container img {
-    max-width: 70%;
-    height: auto;
-}
-
-/* Responsive CSS for iPhone screens */
-@media screen and (max-width: 480px) {
+/* מדיה קוואריז להתאמה למובייל */
+@media (max-width: 768px) {
     .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
+        width: 95%;
+        padding: 15px;
     }
 
-    .calculator {
-        width: 88%;
-        margin: 0;
+    header, footer {
+        padding: 15px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 1.5em;
     }
 
-    .image-container {
-        width: 50%;
-        padding-top: 40px;
-        padding-left: 60px;
+    .form-group label {
+        font-size: 0.9em;
     }
-
-    input, select {
-        width: 80%;
-        
-    }
-
-    label {
-        text-align: left;
-        }
 
     button {
-        width: 40%;
+        padding: 15px 20px;
     }
-    .form-group {
-        display: inline-flex;
-        
-        
-    }
-
 }
+
+
 

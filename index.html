@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>מחשבון BMR</title>
     <link rel="stylesheet" href="styles.css">
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <header>
@@ -43,11 +43,17 @@
             </form>
 
             <div id="result"></div>
+            <canvas id="bmrChart"></canvas> <!-- קנבס לגרף -->
         </div>
 
-        <div class="image-container">
-            <img src="images/bmr.jpg" alt="Your Image">
+        <div class="bmr-info">
+            <h3>What is BMR?</h3>
+            <p>The Basal Metabolic Rate (BMR) is the rate at which your body burns calories at rest to maintain vital bodily functions such as breathing, circulation, and cell production. BMR is influenced by several factors, including age, sex, weight, and muscle mass. A higher BMR means your body needs more calories to function at rest, which can be a crucial factor in planning diet and exercise effectively.</p>
+        
+            <h3>Why is it important?</h3>
+            <p>Understanding your BMR can help you better manage your diet for weight loss or muscle gain by allowing you to create a more tailored eating plan. Knowing how many calories your body burns in a resting state can help you determine how many calories you should consume to meet your fitness or weight goals.</p>
         </div>
+        
     </div>
 
     <footer>
@@ -58,3 +64,5 @@
     <script src="bmr.js"></script>
 </body>
 </html>
+
+
